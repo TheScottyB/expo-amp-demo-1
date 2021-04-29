@@ -5,6 +5,7 @@ frontend:
       commands:
         - nvm use $VERSION_NODE_12
         - npm install --quiet --global expo-cli
+        - yarn add react
         - yarn
     build:
       commands:
