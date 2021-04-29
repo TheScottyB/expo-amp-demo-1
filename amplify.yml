@@ -3,15 +3,9 @@ frontend:
   phases:
     preBuild:
       commands:
+        - nvm use $VERSION_NODE_12
         - npm install --quiet --global expo-cli
-        - >
-          if [ -f yarn.lock ]; then
-            yarn
-          elif [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ]; then
-            npm ci
-          else
-            npm install
-          fi
+        - yarn
     build:
       commands:
         - expo build:web
