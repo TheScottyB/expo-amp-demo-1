@@ -1,0 +1,11 @@
+{
+  "extends": "../tsconfig",
+  "references": [
+    // usuall do stuff like this to reference localy libraries
+    // { "path": "../packages/material-top-tabs" },
+  ],
+  "compilerOptions": {
+    // Avoid expo-cli auto-generating a tsconfig
+  },
+  "typeRoots": ["./src/types"]
+}

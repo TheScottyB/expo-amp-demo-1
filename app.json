@@ -1,0 +1,34 @@
+{
+  "name": "MLSShowings",
+  "displayName": "MLS Showing Management",
+  "expo": {
+    "name": "MLS Showing Management",
+    "owner": "msadmin",
+    "slug": "mls-showings",
+    "description": "Showing service for MLS members.",
+    "privacy": "public",
+    "version": "1.0.0",
+    "icon": "./assets/ms-icon-black-transparent.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "scheme": "rne",
+    "entryPoint": "App.tsx"
+  }
+}
