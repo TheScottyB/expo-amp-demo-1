@@ -5,10 +5,10 @@ frontend:
       commands:
         - nvm use $VERSION_NODE_12
         - npm install --quiet --global expo-cli
-        - yarn add react
-        - yarn
+        - yarn       
     build:
       commands:
+        - yarn add react
         - expo build:web
   artifacts:
     baseDirectory: web-build
