@@ -3,11 +3,11 @@ frontend:
   phases:
     preBuild:
       commands:
-        - yarn
         - nvm use $VERSION_NODE_12
         - npm install --quiet --global expo-cli    
     build:
       commands:
+        - yarn
         - expo build:web
   artifacts:
     baseDirectory: web-build
