@@ -54,7 +54,7 @@
     "koa": "^2.13.0",
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
-    "react": "16.13.1",
+    "react": "^17.0.2",
     "react-devtools": "^4.10.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz",
