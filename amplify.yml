@@ -8,6 +8,7 @@ frontend:
     build:
       commands:
         - yarn
+        - yarn add react
         - expo build:web
   artifacts:
     baseDirectory: web-build
