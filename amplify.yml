@@ -16,6 +16,7 @@ frontend:
     build:
       commands:
         - npm install react 
+        - npm install expo-asset
         - expo build:web
   artifacts:
     baseDirectory: web-build
