@@ -14,6 +14,7 @@ frontend:
           else
            npm install
           fi
+          expo build:web
     build:
       commands:
         - expo build:web
