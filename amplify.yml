@@ -5,10 +5,16 @@ frontend:
       commands:
         - nvm use $VERSION_NODE_12
         - npm install --quiet --global expo-cli    
+        - |-
+          if [ -f yarn.lock ]; then
+           yarn
+          elif [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ]; then
+           npm ci
+          else
+           npm install
+          fi
     build:
       commands:
-        - yarn
-        - yarn add @types/react
         - expo build:web
   artifacts:
     baseDirectory: web-build
