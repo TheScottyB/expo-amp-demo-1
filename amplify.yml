@@ -4,7 +4,8 @@ frontend:
     preBuild:
       commands:
         - nvm use $VERSION_NODE_12
-        - npm install --quiet --global expo-cli    
+        - npm install --quiet --global expo-cli   
+        - npm install --quiet --global react 
         - |-
           if [ -f yarn.lock ]; then
            yarn
@@ -15,8 +16,6 @@ frontend:
           fi
     build:
       commands:
-        - npm install react 
-        - npm install expo-asset
         - expo build:web
   artifacts:
     baseDirectory: web-build
