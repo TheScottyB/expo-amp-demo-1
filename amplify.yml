@@ -15,6 +15,7 @@ frontend:
           fi
     build:
       commands:
+        - yarn add react 
         - expo build:web
   artifacts:
     baseDirectory: web-build
