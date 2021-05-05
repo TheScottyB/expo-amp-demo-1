@@ -15,7 +15,7 @@ frontend:
           fi
     build:
       commands:
-        - yarn add react 
+        - npm install react 
         - expo build:web
   artifacts:
     baseDirectory: web-build
