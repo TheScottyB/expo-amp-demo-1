@@ -15,7 +15,7 @@ module.exports = async function (env, argv) {
     include: /(packages|tbd-showings)\/.+/,
     exclude: /node_modules/,
     use: 'babel-loader',
-    typeRoots: ["node_modules/@types"],
+    typeRoots: 'node_modules/@types',
 
   });
 
