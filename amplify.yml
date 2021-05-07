@@ -5,6 +5,7 @@ frontend:
       commands:
         - nvm use $VERSION_NODE_12
         - yarn global add expo-cli 
+        - yarn global add react 
         - |-
           if [ -f yarn.lock ]; then
            yarn
